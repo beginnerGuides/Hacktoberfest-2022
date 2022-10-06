@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>BudgetExpenses Detail</title>
+</head>
+
+<body>
+    <h1 class="heading">Budget Expenses Details</h1>
+    <div class="feedback budget-feedback expense-feedback">
+    </div>
+    <div class="dashboard">
+        <div class="bud">
+            <h2>Budget</h2>
+            <h2><span>$</span><span id="budget-amount">0000</span></h2>
+        </div>
+        <div class="exp">
+            <h2>Expenses</h2>
+            <h2><span>$</span><span id="expense-amount">0000</span></h2>
+        </div>
+        <div class="total">
+            <h2>Balance</h2>
+            <h2><span>$</span><span id="total-amount">0000</span></h2>
+        </div>
+    </div>
+
+    <div class="expense-budget-div">
+        <!-- for budget inputs -->
+        <div class="budget-div">
+            <form class="form-control" id="budget-form">
+                <label for="budgetValue">
+                    Enter your budget Amount
+                </label>
+                <input type="number" id="budget-input" placeholder="Your budget...$">
+                <button class="btn budget-btn" id="budget-submit" type="submit">Add Budget</button>
+            </form>
+        </div>
+        <!-- for expenses inputs -->
+        <div class="expense-div">
+            <form class="form-control" id="expense-form">
+                <label for="expenseName">
+                    Enter your expenses name
+                </label>
+                <input type="text" id="expense-input" placeholder="expenses name...">
+
+                <label for="expensesValue">
+                    Enter your expenses Amount
+                </label>
+                <input type="number" id="expense-value" placeholder="Your expense $...">
+                <button class="btn expense-btn" id="expense-submit" type="submit">Add Expense</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- list for all the expenses -->
+    <div class="outer">
+        <h1 class="list-heading">All the expenses</h1>
+        <div class="list-of-expenses">
+            <div class="expense-list-info">
+                <h5 class="list-item">Expense Title</h5>
+                <h5 class="list-item">Expense Value</h5>
+                <h5 class="list-item"></h5>
+            </div>
+            <!-- single expense model -->
+            <div id="expense-list">.
+                <!-- <div class="expenses-list">
+                    <h6 class="expense-title">Title</h6>
+                    <h6 class="expense-amount">Amount</h6>
+                    <div class="expense-icon list-item">
+                        <a href="#" class="edit-icon" data-id="">
+                            <i>edit</i>
+                        </a>
+                        <a href="#" class="del-icon" data-id="">
+                            <i>del</i>
+                        </a>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
