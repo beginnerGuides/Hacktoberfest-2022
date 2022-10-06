@@ -1,0 +1,300 @@
+:root {
+    --primary: rgb(6, 143, 79);
+    --secondary: rgb(160, 17, 17);
+    --background_color: rgba(27, 21, 27, 0.267);
+    --budget-background: rgb(8, 112, 60);
+    --expense-background: rgb(170, 19, 19);
+    --total-background: rgb(27, 45, 148);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn {
+    padding: .5rem;
+    width: 250px;
+    height: auto;
+    margin: .3rem;
+    border: none;
+}
+
+/* feedback notify  */
+.feedback p {
+    color: rgb(247, 242, 242);
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.budget-feedback {
+    background: rgb(189, 169, 54);
+    border-radius: 15px;
+    width: 50%;
+    height: auto;
+    margin: .5rem auto;
+    padding: .5rem;
+    display: none;
+}
+
+.expense-feedback {
+    background: rgb(230, 75, 75);
+    border-radius: 15px;
+    width: 50%;
+    height: auto;
+    margin: .5rem auto;
+    padding: .5rem;
+    display: none;
+}
+
+.show-feedback {
+    display: block;
+}
+
+
+
+/* ************************************* */
+
+
+.heading {
+    font-size: 3.6rem;
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(50, 7, 90);
+    text-align: center;
+    margin-top: 2.0rem;
+}
+
+.dashboard {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1.2rem;
+    padding: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.bud {
+
+    background-color: var(--budget-background);
+    padding: .5rem;
+    margin: .3rem;
+    color: white;
+    height: 90px;
+    width: 33%;
+    box-shadow: 5px 5px 4px rgba(4, 87, 8, 0.267);
+    text-align: center;
+}
+
+.exp {
+    background-color: var(--expense-background);
+    padding: .5rem;
+    margin: .3rem;
+    color: white;
+    height: 90px;
+    width: 33%;
+    box-shadow: 5px 5px 4px rgba(85, 6, 10, 0.267);
+    text-align: center;
+
+}
+
+.total {
+    background-color: var(--total-background);
+    padding: .5rem;
+    margin: .3rem;
+    color: white;
+    height: 90px;
+    width: 33%;
+    box-shadow: 5px 5px 4px rgba(16, 7, 68, 0.267);
+    text-align: center;
+
+}
+
+.expense-budget-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* budgetdivision */
+.budget-div {
+    border: 3px solid green;
+    height: 250px;
+    width: 90%;
+    margin: 1.2rem;
+    padding: .4rem;
+
+}
+
+.budget-div .form-control {
+    display: flex;
+    flex-direction: column;
+    padding: 2.2rem;
+    margin: .56rem;
+}
+
+.form-control label {
+    padding: .3rem;
+    font-size: 1.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+}
+
+.form-control input {
+    margin: .3rem;
+    padding: .3rem;
+    font-size: 1.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+}
+
+.budget-btn {
+    margin-top: 1.2rem;
+    border: 3px solid green;
+    border-radius: .2rem;
+    background-color: transparent;
+    color: green;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+}
+
+.budget-btn:hover {
+    border: 2px solid green;
+    background-color: green;
+    color: white;
+
+}
+
+/***************************/
+
+/* *****expenses form control***** */
+
+.expense-div {
+    border: 3px solid rgb(119, 8, 8);
+    height: 330px;
+    width: 90%;
+    margin: 1.2rem;
+    padding: .4rem
+}
+
+.expense-div .form-control {
+    display: flex;
+    flex-direction: column;
+    padding: 2.2rem;
+    margin: .56rem;
+}
+
+.expense-btn {
+    margin-top: 1.2rem;
+    border: 3px solid red;
+    border-radius: .2rem;
+    background-color: transparent;
+    color: red;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+}
+
+.expense-btn:hover {
+    background-color: red;
+    color: white;
+}
+
+/* ************************ */
+/* **************list of the expenses************ */
+.outer .list-heading {
+    text-align: center;
+    margin: .5rem;
+    font-size: 2.5rem;
+    color: blue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.list-of-expenses {
+    margin-top: 5rem;
+    border: 2px solid blue;
+    margin: auto;
+    height: auto;
+    width: 90%;
+    margin-bottom: 2rem;
+}
+
+/* Expenses details */
+
+.expense-list-info {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 3px solid rgb(45, 21, 110);
+}
+
+.list-item {
+    font-size: 1.2rem;
+    margin-top: .2rem;
+    text-transform: capitalize;
+    color: rgb(29, 29, 13);
+
+}
+
+.expense {
+    border-bottom: 2px solid red;
+    height: auto;
+    width: 100%;
+    margin-top: 0.5rem;
+
+}
+
+.expenses-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* for the icons buttons */
+.expense-icon {
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: -.2rem;
+
+}
+
+.expense-icon a {
+    text-decoration: none;
+    margin-right: .5rem;
+}
+
+.edit-icon {
+    color: blue;
+}
+
+.edit-icon:hover {
+    color: rgb(105, 105, 202);
+
+}
+
+.del-icon {
+    color: red;
+}
+
+.del-icon:hover {
+    color: rgb(177, 104, 104);
+
+}
+
+/* ***********responsive************* */
+@media screen and (max-width:1035px) {
+    .expense-budget-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
