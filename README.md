@@ -89,7 +89,7 @@ git push origin branch-name
 * Wait for your PR review and merge approval!
 
 ## Updating your repository
-If you get this message __'This branch is ___ commits behind codersalman:main.',__ follow below steps:
+If you get this message __'This branch is ___ commits behind beginnerGuides:main.',__ follow below steps:
 
 * Click on __Fetch Upstream -> Fetch and merge__
 * Open up terminal on your local machine and run this cmd.
