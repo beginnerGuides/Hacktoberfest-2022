@@ -100,9 +100,24 @@ git pull origin branch-name
 
 
 ### Contributers
-Our contributors
-<a href = "https://github.com/beginnerGuides/Hacktoberfest-2022/graphs/contributors">
- 
+#### Our contributors
+<a href="https://github.com/TilakKhatri">
+  <img src="https://avatars.githubusercontent.com/u/96524338?s=60&v=4" width="50" height="50" border-radius="50">
+</a>
+<a href="https://github.com/romiljain23">
+  <img src="https://avatars.githubusercontent.com/u/88021621?s=60&v=4" width="50" height="50">
+</a>
+<a href="https://github.com/RohitChauhan13">
+  <img src="https://avatars.githubusercontent.com/u/97402395?s=60&v=4" width="50" height="50">
+</a>
+<a href="https://github.com/showMiko">
+  <img src="https://avatars.githubusercontent.com/u/91832866?s=60&v=4" width="50" height="50">
+</a>
+<a href="https://github.com/Sanyam-7">
+  <img src="https://avatars.githubusercontent.com/u/95625462?s=60&v=4" width="50" height="50">
+</a>
+<a href="https://github.com/WinterTurtle23">
+  <img src="https://avatars.githubusercontent.com/u/83697942?s=60&v=4" width="50" height="50">
 </a>
 
 
