@@ -117,7 +117,7 @@ function addExpense(expense) {
             <i>edit</i>
         </a>
         <a href="#" class="del-icon" data-id="${expense.id}">
-            <i>del</i>
+            <i>delete</i>
         </a>
     </div>
 </div>`;
