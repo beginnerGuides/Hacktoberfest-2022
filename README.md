@@ -119,7 +119,9 @@ git pull origin branch-name
 <a href="https://github.com/WinterTurtle23">
   <img src="https://avatars.githubusercontent.com/u/83697942?s=60&v=4" width="50" height="50">
 </a>
-
+<a href="https://github.com/malhar16">
+  <img src="https://avatars.githubusercontent.com/u/97526274?v=4" width="50" height="50">
+</a>
 
 ### Contributing :  
 
