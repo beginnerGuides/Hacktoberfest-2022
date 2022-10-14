@@ -1,0 +1,83 @@
+{% extends 'todos/main.html' %}
+{% block content %}
+
+<div class=" container-fluid header-bar">
+    <div>
+        <h1>Hello {{request.user|title}} !</h1>
+        <h3>Add your Tasks below:</h3>
+    </div>
+
+    
+    {% if request.user.is_authenticated %}
+        {% comment %} <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="sweetalert2.all.min.js"></script>
+        <script>
+            var m = "{{ message }}"
+            Swal.fire({
+                position: 'center'
+                icon: 'success',
+                text: "successful",
+                title: 'Perfect',
+                timer: 3000;
+                })
+        </script> {% endcomment %}
+
+
+    <a href="{% url 'logout' %}"><button type="button" class="btn btn-outline-dark">Logout</button></a>
+    {% else %}
+    <a href="{% url 'login' %}"><button type="button" class="btn btn-outline-dark">Login</button></a>
+    {% endif %}
+
+
+</div>
+
+
+<hr>
+
+
+<div class="add-item">
+    <h3>Items in your to-do list:</h3> 
+    <button type="button" class="btn btn-outline add-item"><a href="{% url 'task-create' %}">Add Task</a></button>
+</div>
+
+<div class="task-items">
+    {% for task in tasks %}
+    <div class="task">
+        {% if task.complete %}
+        <div class="task-complete">
+            <div class="task-complete-title">
+                <a href="{% url 'task-update' task.id %}"><i><s>
+                    {{task}}
+                </s></i></a>
+            </div>
+        </div>
+            
+            <!-- <a href="{% url 'task-update' task.id %}"><button type="button" class="btn btn-success">Update</button></a> -->
+            <div class="buttons">
+            <a href="{% url 'task-delete' task.id %}" class="delete-link"><button type="button" class="btn btn-outline-danger">Delete</button></a></div>
+            
+      
+        
+
+        {% else %}
+        <div class="task-title">
+            <div class="task-incomplete">{{task}}</div>
+        </div>
+        <div class="buttons">
+        <a href="{% url 'task-update' task.id %}"><button type="button" class="btn btn-outline-success">Update</button></a>
+        <a href="{% url 'task-delete' task.id %}" class="delete-link"><button type="button" class="btn btn-outline-danger">Delete</button></a></div>
+
+
+        {% endif %}
+
+    </div>
+
+
+    {% empty %}
+    <h3>No items in list</h3>
+    {% endfor%}
+
+</div>
+
+
+{% endblock content %}

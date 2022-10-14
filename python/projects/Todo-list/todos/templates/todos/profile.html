@@ -1,0 +1,20 @@
+{% extends 'todos/main.html' %}
+{% block content %}
+
+<a href="{% url 'tasks' %}">&#8592; Go Back</a>
+
+<h3 align='center'><b> Profile </b></h3>
+
+<div class="content-section">
+    <div class="media">
+      <img class="account-img" src="{{ user.profile.image.url }}">
+      <div class="media-body">
+        <h2 class="account-heading">{{ user.username }}</h2>
+        <p class="text-secondary">{{ user.profile.email }}</p>
+      </div>
+    </div>
+  </div>
+
+
+{% endblock content %}
+

@@ -1,0 +1,17 @@
+{% extends 'todos/main.html' %}
+{% block content %}
+
+<h3>To-Do form</h3>
+
+<a href="{% url 'tasks' %}">Go Back</a>
+
+<form method="POST" action="">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button  class="btn btn-primary">Submit</button>
+</form>
+
+{% endblock content %}
+
+{% comment %} 
+<input class="button" type="submit" value="Submit"> {% endcomment %}
