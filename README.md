@@ -34,7 +34,7 @@ This is a repository for anyone wishing to contribute to HacktoberFest 2022
 ### Read [CONTRIBUTING.md](./CONTRIBUTING.md) for more about contributing using GITHUB website
 Celebrate [Hacktoberfest](https://hacktoberfest.digitalocean.com/) by getting involved in the open source community by completing `4 quality PRs` in this project.
 
-`Star`⭐ this repo first
+<h3>Star⭐ this repo first</h3>
 
 This repository is open to `all members` of the `GitHub community`. Any member may contribute to this project without being a collaborator.
 
@@ -101,7 +101,7 @@ git pull origin branch-name
 
 ### Contributers
 #### Our contributors
-
+<p>
 <a href="https://github.com/TilakKhatri">
   <img src="https://avatars.githubusercontent.com/u/96524338?s=60&v=4" width="50" height="50" border-radius="50">
 </a>
@@ -129,9 +129,10 @@ git pull origin branch-name
 <a href="https://github.com/rahul-gargcoder">
   <img src="https://avatars.githubusercontent.com/u/96135903?s=60&v=4" width="50" height="50">
 </a>
-
-
-
+<a href="htttps://github.com/abhi26ak">
+<img src="https://avatars.githubusercontent.com/u/65384193?s=60&v=4" width="50" height="50">
+</a>
+</p>
 ### Contributing :  
 
 You can choose directory of your preferred tech stack  and follow the contributing rules - make folder / proper file name and proper extension.
