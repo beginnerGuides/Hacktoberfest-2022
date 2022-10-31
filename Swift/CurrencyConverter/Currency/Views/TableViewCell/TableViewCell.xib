@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Dongle-Regular.ttf">
+            <string>Dongle-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" rowHeight="60" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="Currency" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="322" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="322" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="84z-ag-4gC">
+                        <rect key="frame" x="10" y="10" width="116" height="40"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="belarus" translatesAutoresizingMaskIntoConstraints="NO" id="6RH-q8-jB5">
+                                <rect key="frame" x="0.0" y="0.0" width="55.5" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55.5" id="FQJ-ga-Syx"/>
+                                    <constraint firstAttribute="height" constant="40" id="y6C-DK-XyV"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tse-b8-nM9">
+                                <rect key="frame" x="70.5" y="0.0" width="45.5" height="40"/>
+                                <fontDescription key="fontDescription" name="Dongle-Regular" family="Dongle" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="84z-ag-4gC" secondAttribute="bottom" constant="10" id="P8f-Lq-43K"/>
+                    <constraint firstItem="84z-ag-4gC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Ye9-Kq-72E"/>
+                    <constraint firstItem="84z-ag-4gC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="kfH-ke-WZ9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="codeLabel" destination="Tse-b8-nM9" id="O4b-UF-Crb"/>
+                <outlet property="flagImage" destination="6RH-q8-jB5" id="8iH-I7-Vdz"/>
+            </connections>
+            <point key="canvasLocation" x="55.072463768115945" y="58.928571428571423"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="belarus" width="640" height="480"/>
+    </resources>
+</document>
