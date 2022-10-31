@@ -22,6 +22,7 @@ This is a repository for anyone wishing to contribute to HacktoberFest 2022
 | OS | /OS | `operating system` | Projects, Learning Resources etc. |
 | DBMS | / dbms | `dbms` | Projects, Learning Resources  etc. |
 | DSA | / language/(array,linkedlist....tree) | `dsa` | Projects,Questions, Learning Resources  etc. |
+| Swift        | /Swift | `Swift`| Swift Projects, Learning Resources, etc.|
 
 ## Steps for Contribution after fork and 🌟 the repo 
 
